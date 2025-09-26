@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Ntqs Digital</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      background: transparent;
+    }
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-bg video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-content {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black; 
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      background: none;
+    }
+
+    .hero-content h1,
+    .hero-content p {
+      text-shadow: 2px 2px 6px rgba(255,255,255,0.6);
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .gif-section {
+      background: #fff;
+    }
+
+    .gif-image {
+      max-width: 400px;
+      width: 90%;
+      height: auto;
+    }
+
+    .features {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .feature-card {
+      background: #ff4d4d;
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feature-card img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+    .dashboard {
+      background: #ffffff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .dashboard-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .kpi-card {
+      background: white;
+      border: 2px solid var(--card-color);
+      padding: 30px 20px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .kpi-icon {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .kpi-card h2 {
+      font-size: 2.2rem;
+      color: var(--card-color);
+      margin: 0;
+    }
+
+    .kpi-card p {
+      font-size: 1rem;
+      color: #333;
+      margin: 10px 0 0;
+    }
+
+    .cta {
+      background: #262626;
+      color: white;
+    }
+
+    .cta button {
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-bg">
+    <video autoplay muted loop>
+      <source src="Hero (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="hero-content">
+    <h1>Welcome to Ntqs Digital</h1>
+    <p>Elevate Your Business with a Leading Digital Marketing Company.</p>
+  </div>
+  <section class="gif-section">
+    <h2>Our Digital solutions built to grow your brand.</h2>
+    <img src="Data Driven.gif" alt="Data Animation" class="gif-image" />
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <img src="Icon1_024.webp" alt="Feature Icon" />
+      <h3>We Think Ahead</h3>
+      <p>As a top digital marketing company we use innovative ideas to drive real growth and results.</p>
+    </div>
+    <div class="feature-card">
+      <img src="Icon1_024.webp" alt="Feature Icon" />
+      <h3>Skilled Professionals</h3>
+      <p>Our expert team of designers and SEO pros at NTQS offer digital marketing services tailored to your needs.</p>
+    </div>
+    <div class="feature-card">
+      <img src="Icon1_024.webp" alt="Feature Icon" />
+      <h3>Data-Driven Results</h3>
+      <p>As a digital marketing company, we use data and insights to guide campaigns that deliver ROI and help your business.</p>
+    </div>
+  </section>
+
+  <section class="dashboard">
+    <h2 style="font-size: 2.2rem; margin-bottom: 40px;">📊 Key Performance </h2>
+    
+    <div class="dashboard-container">
+      <div class="kpi-card" style="--card-color: #007bff;">
+        <div class="kpi-icon">👥</div>
+        <h2>124K</h2>
+        <p>Monthly Visitors</p>
+      </div>
+
+      <div class="kpi-card" style="--card-color: #28a745;">
+        <div class="kpi-icon">🚀</div>
+        <h2>7.2K</h2>
+        <p>Leads Generated</p>
+      </div>
+
+      <div class="kpi-card" style="--card-color: #ffc107;">
+        <div class="kpi-icon">🔁</div>
+        <h2>89%</h2>
+        <p>Retention Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ntqs Digital</h2>
+    <p>Elevating business through cutting-edge technology and creative solutions, Nuevos is your trusted partner for innovation and progress.</p>
+    <button>Get Started</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Data Insights. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
